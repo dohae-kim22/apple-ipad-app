@@ -1,1 +1,0 @@
-# apple-ipad-app

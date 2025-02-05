@@ -655,6 +655,47 @@ nav .menu li.active:hover a {
   transform: translate(543px, 908px);
 }
 
+/* Display */
+.display {
+  margin-top: 450px;
+}
+
+.display .notes h1 {
+  background-image: url("../images/display_headline.png");
+  width: 630px;
+  height: 370px;
+  transform: translate(104px, 0);
+}
+
+.display .notes .figures {
+  height: 814px;
+  margin-top: 26px;
+}
+
+.display .notes figcaption {
+  background-image: url("../images/display_notes_caption.png");
+  width: 145px;
+  height: 45px;
+  transform: translate(707px, -16px);
+}
+
+.display .shareplay {
+  margin-top: 55px;
+}
+.display .shareplay .figures {
+  height: 630px;
+}
+
+.display .shareplay figure {
+  transform: translate(-360px, 0);
+}
+.display .shareplay figcaption {
+  background-image: url("../images/display_shareplay_caption.png");
+  width: 110px;
+  height: 48px;
+  transform: translate(300px, 658px);
+}
+
 /* Sprite Icon */
 @keyframes sprite-icon {
   /* 1~10 */

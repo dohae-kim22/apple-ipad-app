@@ -103,6 +103,14 @@ img {
   max-width: 330px;
   margin-bottom: 24px;
   z-index: 1;
+  transition: 1s;
+  opacity: 0;
+  transform: translate(0, 100px);
+}
+
+.info.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .info .icon {

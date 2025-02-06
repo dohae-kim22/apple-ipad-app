@@ -1055,6 +1055,26 @@ nav .menu li.active:hover a {
   transform: translate(533px, 485px);
 }
 
+/* Accessibility */
+.accessibility {
+  margin-top: 266px;
+  margin-bottom: 170px;
+}
+
+.accessibility h1 {
+  background-image: url("../images/accessibility_headline.png");
+  width: 384px;
+  height: 270px;
+}
+
+.accessibility .infos {
+  margin-top: 20px;
+}
+
+.accessibility figure {
+  transform: translate(470px, -620px);
+}
+
 /* Sprite Icon */
 @keyframes sprite-icon {
   /* 1~10 */

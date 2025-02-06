@@ -871,6 +871,66 @@ nav .menu li.active:hover a {
   justify-content: space-around;
 }
 
+/* IpadOS */
+.ipados {
+  margin-top: 212px;
+}
+
+.ipados h1 {
+  background-image: url("../images/ipados_headline.png");
+  width: 530px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.ipados .infos {
+  align-items: flex-end;
+  margin-top: 44px;
+}
+
+.ipados .figures {
+  display: flex;
+  height: 782px;
+}
+
+.ipados .figures > div {
+  flex-grow: 1;
+  position: relative;
+}
+
+.ipados .figure-split-view figure {
+  transform: translate(-205px, -312px);
+}
+
+.ipados .figure-split-view figcaption {
+  background-image: url("../images/ipados_split_view_caption.png");
+  width: 163px;
+  height: 53px;
+  transform: translate(200px, -38px);
+}
+
+.ipados .figure-widget figure {
+  transform: translate(237px, 43px);
+}
+
+.ipados .figure-widget figcaption {
+  background-image: url("../images/ipados_widgets_caption.png");
+  width: 161px;
+  height: 46px;
+  transform: translate(257px, 497px);
+}
+
+.ipados .figure-quick-note figure {
+  transform: translate(-625px, 232px);
+}
+
+.ipados .figure-quick-note figcaption {
+  background-image: url("../images/ipados_quick_note_caption.png");
+  width: 82px;
+  height: 97px;
+  transform: translate(511px, 470px);
+}
+
 /* Sprite Icon */
 @keyframes sprite-icon {
   /* 1~10 */

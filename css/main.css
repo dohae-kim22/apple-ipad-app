@@ -1017,6 +1017,44 @@ nav .menu li.active:hover a {
   transform: translate(24px, 690px);
 }
 
+/* Privacy */
+.privacy {
+  margin-top: 238px;
+}
+
+.privacy h1 {
+  background-image: url("../images/privacy_headline.png");
+  width: 482px;
+  height: 237px;
+  transform: translate(57px, 0);
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.privacy .infos {
+  margin-top: 38px;
+  align-items: flex-end;
+}
+
+.privacy figure {
+  transform: translate(-215px, -500px);
+}
+
+.privacy figcaption .caption-apple-id {
+  background-image: url("../images/privacy_caption_apple_id.png");
+  width: 170px;
+  height: 26px;
+  transform: translate(195px, -13px);
+}
+
+.privacy figcaption .caption-touch-id {
+  background-image: url("../images/privacy_caption_touch_id.png");
+  width: 150px;
+  height: 31px;
+  transform: translate(533px, 485px);
+}
+
 /* Sprite Icon */
 @keyframes sprite-icon {
   /* 1~10 */

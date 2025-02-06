@@ -537,6 +537,10 @@ nav .menu li.active:hover a {
 }
 
 /* Hero */
+.hero {
+  background-color: var(--color-section);
+}
+
 .hero .inner {
   padding-bottom: 110px;
 }
@@ -929,6 +933,88 @@ nav .menu li.active:hover a {
   width: 82px;
   height: 97px;
   transform: translate(511px, 470px);
+}
+
+/* Apps */
+.apps {
+  margin-top: 368px;
+}
+
+.apps h1 {
+  background-image: url("../images/apps_headline.png");
+  width: 500px;
+  height: 264px;
+  transform: translate(17px, 0);
+}
+
+.apps .info {
+  margin-top: 36px;
+  margin-bottom: 82px;
+}
+
+.apps .figures {
+  height: 788px;
+  display: flex;
+}
+
+.apps .figures > div {
+  flex-grow: 1;
+  position: relative;
+}
+
+.apps .figure-masterclass figure {
+  transform: translate(578px, -431px);
+}
+
+.apps .figure-masterclass figcaption {
+  background-image: url("../images/apps_masterclass_caption.png");
+  width: 100px;
+  height: 25px;
+  transform: translate(26px, 690px);
+}
+
+.apps .figure-adobe figure {
+  transform: translate(-515px, 85px);
+}
+
+.apps .figure-adobe figcaption {
+  background-image: url("../images/apps_adobe_caption.png");
+  width: 105px;
+  height: 24px;
+  transform: translate(544px, 514px);
+}
+
+.apps .figure-fantasian figure {
+  transform: translate(-103px, 318px);
+}
+
+.apps .figure-fantasian figcaption {
+  background-image: url("../images/apps_fantasian_caption.png");
+  width: 74px;
+  height: 22px;
+  transform: translate(24px, 483px);
+}
+
+.apps .figure-books figure {
+  transform: translate(-133px, -150px);
+}
+
+.apps .figure-books figcaption {
+  background-image: url("../images/apps_books_caption.png");
+  width: 50px;
+  height: 27px;
+  transform: translate(397px, 707px);
+}
+
+.apps .figure-goodnotes figure {
+  transform: translate(-93px, 68px);
+}
+
+.apps .figure-goodnotes figcaption {
+  background-image: url("../images/apps_goodnotes_caption.png");
+  width: 99px;
+  height: 26px;
+  transform: translate(24px, 690px);
 }
 
 /* Sprite Icon */

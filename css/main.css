@@ -120,6 +120,10 @@ img {
   animation: sprite-icon 3s infinite steps(1);
 }
 
+.infos.infos-large .info {
+  max-width: 410px;
+}
+
 .info .icon.icon-chip {
   background-image: url("../images/sprite_chip.png");
 }
@@ -179,6 +183,12 @@ img {
   font-size: 21.5px;
   font-weight: 600;
   line-height: 1.5;
+}
+
+.info a.link {
+  display: block;
+  margin-top: 44px;
+  font-size: 19.5px;
 }
 
 /* Button */
@@ -350,6 +360,7 @@ header .menu > li > a:hover {
 
 .cart > ul > li > a:hover {
   text-decoration: underline;
+  opacity: 0.7;
 }
 
 /* Header / Search */
@@ -526,9 +537,6 @@ nav .menu li.active:hover a {
 }
 
 /* Hero */
-.hero {
-}
-
 .hero .inner {
   padding-bottom: 110px;
 }
@@ -782,6 +790,85 @@ nav .menu li.active:hover a {
   width: 130px;
   height: 47px;
   transform: translate(27px, 905px);
+}
+
+/* Wireless */
+.wireless {
+  margin-top: 202px;
+}
+
+.wireless .facetime h1 {
+  background-image: url("../images/wireless_headline.png");
+  width: 730px;
+  height: 330px;
+  transform: translate(104px, 0);
+}
+
+.wireless .facetime .figures {
+  height: 773px;
+}
+
+.wireless .facetime figure {
+  transform: translate(-68px, 0);
+}
+
+.wireless .facetime figcaption {
+  background-image: url("../images/wireless_facetime_caption.png");
+  width: 139px;
+  height: 46px;
+  transform: translate(843px, -49px);
+}
+
+.wireless .files figure {
+  transform: translate(34px, -34px);
+}
+
+.wireless .files figcaption {
+  background-image: url("../images/wireless_files_caption.png");
+  width: 127px;
+  height: 46px;
+  transform: translate(96px, 639px);
+}
+
+/* Accessories */
+.accessories {
+  margin-top: 195px;
+}
+
+.accessories h1 {
+  background-image: url("../images/accessories_headline.png");
+  width: 550px;
+  height: 343px;
+  margin: 0 auto;
+}
+
+.accessories .figures {
+  height: 1021px;
+  margin-top: 34px;
+}
+
+.accessories figure {
+  transform: translate(-24px, 0);
+}
+
+.accessories figcaption .caption-note {
+  background-image: url("../images/accessories_caption_memo.png");
+  width: 169px;
+  height: 41px;
+  transform: translate(790px, -52px);
+}
+
+.accessories figcaption .caption-support {
+  background-image: url("../images/accessories_caption_supports.png");
+  width: 200px;
+  height: 70px;
+  transform: translate(163px, 821px);
+}
+
+.accessories .infos {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Sprite Icon */

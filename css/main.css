@@ -237,6 +237,40 @@ a.link::after {
   content: " >";
 }
 
+/* WhiteBox */
+.whitebox {
+  background-color: var(--color-white);
+  max-width: 1386px;
+  margin: 0 auto;
+  padding: 100px 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.whitebox.whitebox-transparent {
+  background-color: transparent;
+}
+
+.whitebox .icon {
+  margin-bottom: 20px;
+}
+
+.whitebox h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.whitebox p {
+  font-size: 19px;
+  margin-top: 20px;
+}
+
+.whitebox a.link {
+  display: block;
+  margin-top: 26px;
+}
+
 /* Header */
 header {
   background-color: var(--color-header);
@@ -1073,6 +1107,47 @@ nav .menu li.active:hover a {
 
 .accessibility figure {
   transform: translate(470px, -620px);
+}
+
+/* AR */
+.ar {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+}
+
+.ar .whitebox {
+  padding-bottom: 0;
+}
+
+.ar .inner {
+  display: flex;
+}
+
+.ar .inner > div {
+  max-width: 410px;
+  margin-top: 60px;
+  margin-right: 90px;
+}
+
+/* Environment */
+.environment {
+  background-color: var(--color-section);
+  padding: 20px 20px 0;
+}
+
+.environment .icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.environment h1,
+.environment p,
+.environment a {
+  text-align: center;
+}
+
+.environment h1 {
+  color: #03a10e;
 }
 
 /* Sprite Icon */

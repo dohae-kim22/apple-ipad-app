@@ -641,6 +641,7 @@ nav .menu li.active:hover a {
 .power .create {
   margin-top: 55px;
 }
+
 .power .create .figures {
   height: 772px;
 }
@@ -648,6 +649,7 @@ nav .menu li.active:hover a {
 .power .create figure {
   transform: translate(-25px, 50px);
 }
+
 .power .create figcaption {
   background-image: url("../images/power_create_caption.png");
   width: 142px;
@@ -682,6 +684,7 @@ nav .menu li.active:hover a {
 .display .shareplay {
   margin-top: 55px;
 }
+
 .display .shareplay .figures {
   height: 630px;
 }
@@ -689,11 +692,96 @@ nav .menu li.active:hover a {
 .display .shareplay figure {
   transform: translate(-360px, 0);
 }
+
 .display .shareplay figcaption {
   background-image: url("../images/display_shareplay_caption.png");
   width: 110px;
   height: 48px;
   transform: translate(300px, 658px);
+}
+
+/* Camera */
+.camera {
+  margin-top: 303px;
+}
+
+.camera .stage h1 {
+  background-image: url("../images/camera_headline.png");
+  width: 650px;
+  height: 450px;
+  transform: translate(-25px, 0);
+}
+
+.camera .stage .info {
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+
+.camera .stage .figures {
+  height: 770px;
+  margin-top: 24px;
+}
+
+.camera .stage figure {
+  transform: translate(90px, 0);
+}
+
+.camera .stage video {
+  position: absolute;
+  top: 36px;
+  left: 76px;
+  mask-image: url("../images/camera_video_mask.png");
+  -webkit-mask-image: url("../images/camera_video_mask.png");
+}
+
+.camera .stage .video-play,
+.camera .stage .video-pause {
+  display: flex;
+  gap: 8px;
+  color: var(--color-link);
+  cursor: pointer;
+  transform: translate(428px, -130px) rotate(-3deg);
+  align-items: center;
+}
+
+.camera .stage .video-play:hover,
+.camera .stage .video-pause:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.camera .stage .video-play img,
+.camera .stage .video-pause img {
+  width: 20px;
+  margin-top: -2px;
+}
+
+.camera .stage .video-play.hide,
+.camera .stage .video-pause.hide {
+  display: none;
+}
+
+.camera .stage figcaption {
+  background-image: url("../images/camera_hardware_caption.png");
+  width: 130px;
+  height: 110px;
+  transform: translate(-116px, 383px);
+}
+
+.camera .edit .figures {
+  height: 910px;
+}
+
+.camera .edit figure {
+  transform: translate(20px, 0);
+}
+
+.camera .edit figcaption {
+  background-image: url("../images/camera_edit_caption.png");
+  width: 130px;
+  height: 47px;
+  transform: translate(27px, 905px);
 }
 
 /* Sprite Icon */

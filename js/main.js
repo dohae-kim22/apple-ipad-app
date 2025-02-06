@@ -74,7 +74,22 @@ const io = new IntersectionObserver((entries) => {
 
 const infoEls = document.querySelectorAll(".info");
 infoEls.forEach((el) => {
-  console.log("start");
-
   io.observe(el);
+});
+
+// Video Player
+const videoEl = document.querySelector(".stage video");
+const playBtn = document.querySelector(".video-play");
+const pauseBtn = document.querySelector(".video-pause");
+
+playBtn.addEventListener("click", () => {
+  videoEl.play();
+  playBtn.classList.add("hide");
+  pauseBtn.classList.remove("hide");
+});
+
+pauseBtn.addEventListener("click", () => {
+  videoEl.pause();
+  pauseBtn.classList.add("hide");
+  playBtn.classList.remove("hide");
 });

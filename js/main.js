@@ -1,3 +1,5 @@
+import ipads from "../data/ipads.js";
+
 // Cart
 const cartStarterEl = document.querySelector(".cart-starter");
 const cartEl = cartStarterEl.querySelector(".cart");
@@ -92,4 +94,32 @@ pauseBtn.addEventListener("click", () => {
   videoEl.pause();
   pauseBtn.classList.add("hide");
   playBtn.classList.remove("hide");
+});
+
+// Compare Ipads Rendering
+const itemsEl = document.querySelector(".compare .items");
+ipads.forEach((ipad) => {
+  const itemEl = document.createElement("div");
+  itemEl.classList.add("item");
+
+  let colorList = "";
+  ipad.colors.forEach((color) => {
+    colorList += `<li style="background-color:${color}"></li>`;
+  });
+
+  itemEl.innerHTML = /*HTML*/ `
+    <div class="thumbnail">
+      <img src="${ipad.thumbnail}" alt="${ipad.name}">
+    </div>
+    <ul class="colors">
+      ${colorList}
+    </ul>
+    <h3>${ipad.name}</h3>
+    <p class="tagline">${ipad.tagline}</p>
+    <p class="price">From ₩${ipad.price.toLocaleString("en-US")}</p>
+    <button class="btn">Buy</button>
+    <a href="javascript:void(0)" class="link">Learn more</a>
+  `;
+
+  itemsEl.appendChild(itemEl);
 });

@@ -98,6 +98,30 @@ window.addEventListener("resize", () => {
   }
 });
 
+//Mobile Navigation Toggler
+const navEl = document.querySelector("nav");
+const navTogglerEl = navEl.querySelector(".menu-toggler");
+const shadowEl = navEl.querySelector(".shadow");
+navTogglerEl.addEventListener("click", () => {
+  if (navEl.classList.contains("menu-open")) {
+    closeMenu();
+  } else {
+    navEl.classList.add("menu-open");
+  }
+});
+
+navEl.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+shadowEl.addEventListener("click", closeMenu);
+
+window.addEventListener("click", closeMenu);
+
+function closeMenu() {
+  navEl.classList.remove("menu-open");
+}
+
 // Intersection Observer
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

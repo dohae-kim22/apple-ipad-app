@@ -7,11 +7,7 @@ const cartEl = cartStarterEl.querySelector(".cart");
 
 cartStarterEl.addEventListener("click", (event) => {
   event.stopPropagation();
-  if (cartEl.classList.contains("show")) {
-    cartEl.classList.remove("show");
-  } else {
-    cartEl.classList.add("show");
-  }
+  cartEl.classList.toggle("show");
 });
 
 window.addEventListener("click", () => {
@@ -64,6 +60,40 @@ function removeSearching() {
   searchDelayEls.reverse();
   searchInputEl.value = "";
 }
+
+// Mobile Menu
+const menuStarterEl = headerEl.querySelector(".menu-starter");
+menuStarterEl.addEventListener("click", () => {
+  if (headerEl.classList.contains("menu-open")) {
+    document.documentElement.classList.remove("fixed");
+    headerEl.classList.remove("menu-open");
+    searchInputEl.value = "";
+  } else {
+    document.documentElement.classList.add("fixed");
+    headerEl.classList.add("menu-open");
+  }
+});
+
+// Mobile Search
+const searchTextFieldEl = searchWrapEl.querySelector(".text-field");
+const searchCancelerEl = searchWrapEl.querySelector(".search-canceler");
+searchTextFieldEl.addEventListener("click", () => {
+  headerEl.classList.add("searching-mobile");
+  searchInputEl.focus();
+});
+
+searchCancelerEl.addEventListener("click", () => {
+  headerEl.classList.remove("searching-mobile");
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 740) {
+    headerEl.classList.remove("searching");
+  } else {
+    headerEl.classList.remove("searching-mobile");
+    headerEl.classList.remove("menu-open");
+  }
+});
 
 // Intersection Observer
 const io = new IntersectionObserver((entries) => {

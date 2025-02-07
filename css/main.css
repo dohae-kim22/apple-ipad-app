@@ -44,6 +44,12 @@ img {
   -webkit-user-drag: none;
 }
 
+sup {
+  font-size: 0.7em;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
 /* Inner */
 .inner {
   max-width: 980px;
@@ -568,6 +574,11 @@ nav .menu li.active a {
 
 nav .menu li.active:hover a {
   color: var(--color-font);
+}
+
+/* Main */
+main {
+  overflow-x: hidden;
 }
 
 /* Hero */
@@ -1233,6 +1244,181 @@ nav .menu li.active:hover a {
 
 .compare .item .link {
   font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-section);
+}
+
+footer .buy-info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 76px 0;
+  gap: 20px;
+}
+
+footer .buy-info .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 10px;
+}
+
+footer .buy-info h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer .buy-info p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+footer .buy-info .link {
+  font-size: 14px;
+}
+
+footer .warning {
+  padding: 18px 0 10px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+footer .warning li {
+  font-size: 11px;
+  color: var(--color-font-darkgray);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+footer .warning ol {
+  list-style: decimal;
+  padding-left: 16px;
+}
+
+footer .breadcrumbs {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+footer .breadcrumbs .apple {
+  background-image: url("../images/path_apple.svg");
+  width: 16px;
+  height: 16px;
+}
+
+footer .breadcrumbs a {
+  font-size: 12px;
+  color: var(--color-font-darkgray);
+  position: relative;
+}
+
+footer .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+footer .breadcrumbs a::after {
+  content: "";
+  background-image: url("../images/path_div.svg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -18px;
+  width: 8px;
+  height: 18px;
+  margin: auto;
+}
+
+footer .breadcrumbs a:last-child::after {
+  display: none;
+}
+
+footer .navigations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 40px;
+  height: 344px;
+}
+
+footer .navigations .nav {
+  margin-top: 24px;
+}
+
+footer .navigations .nav:nth-child(6) {
+  padding-bottom: 50px;
+}
+
+footer .navigations h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+footer .navigations li {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+footer .navigations li:hover {
+  text-decoration: underline;
+}
+
+footer .navigations a {
+  color: var(--color-font-darkgray);
+}
+
+footer .how-to-shop {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-font-darkgray);
+}
+
+footer .how-to-shop a {
+  color: var(--color-link);
+}
+
+footer .how-to-shop a:hover {
+  text-decoration: underline;
+}
+
+footer .legal {
+  border-top: 1px solid var(--color-border);
+  color: var(--color-font-darkgray);
+  padding: 10px 0 40px;
+  margin-top: 10px;
+  display: flex;
+  gap: 50px;
+  font-size: 12px;
+}
+
+footer .legal ul {
+  display: flex;
+  gap: 21px;
+  flex-grow: 1;
+}
+
+footer .legal li {
+  position: relative;
+}
+
+footer .legal li:hover {
+  text-decoration: underline;
+}
+
+footer .legal li::after {
+  content: "|";
+  position: absolute;
+  right: -11px;
+  color: var(--color-border);
+}
+
+footer .legal li:last-child::after {
+  display: none;
 }
 
 /* Sprite Icon */

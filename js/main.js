@@ -1,4 +1,5 @@
 import ipads from "../data/ipads.js";
+import navigations from "../data/navigations.js";
 
 // Cart
 const cartStarterEl = document.querySelector(".cart-starter");
@@ -123,3 +124,26 @@ ipads.forEach((ipad) => {
 
   itemsEl.appendChild(itemEl);
 });
+
+// Navigation Rendering
+const navigationsEl = document.querySelector("footer .navigations");
+navigations.forEach((nav) => {
+  const navigationEl = document.createElement("div");
+  navigationEl.classList.add("nav");
+
+  let navList = "";
+  nav.maps.forEach((map) => {
+    navList += `<li><a href="${map.url}">${map.name}</a></li>`;
+  });
+
+  navigationEl.innerHTML = /*HTML*/ `
+    <h3>${nav.title}</h3>
+    <ul>${navList}</ul>
+  `;
+
+  navigationsEl.appendChild(navigationEl);
+});
+
+// Get Current Year
+const thisYearEl = document.querySelector(".this-year");
+thisYearEl.textContent = new Date().getFullYear();

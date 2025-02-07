@@ -30,7 +30,10 @@ const searchInputEl = searchWrapEl.querySelector("input");
 
 searchStarterEl.addEventListener("click", addSearching);
 
-searchCloserEl.addEventListener("click", removeSearching);
+searchCloserEl.addEventListener("click", (event) => {
+  event.stopPropagation();
+  removeSearching();
+});
 
 searchShadowEl.addEventListener("click", removeSearching);
 

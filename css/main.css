@@ -695,6 +695,13 @@ header.searching .search-wrap {
     max-width: 590px;
   }
 
+  header .search-wrap {
+    padding: 0 20px 14px;
+    border-bottom: 1px solid var(--color-header);
+    box-sizing: border-box;
+    top: var(--header-height);
+  }
+
   header .search .shadow {
     display: none;
   }
@@ -756,10 +763,6 @@ header.searching .search-wrap {
   header.menu-open .search-wrap {
     visibility: visible;
     opacity: 1;
-    padding: 0 20px 14px;
-    border-bottom: 1px solid var(--color-header);
-    box-sizing: border-box;
-    top: var(--header-height);
   }
 }
 

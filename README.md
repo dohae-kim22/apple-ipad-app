@@ -7,6 +7,7 @@ The page is designed to be fully responsive, adjusting to different screen sizes
 
 You can view the live demo of the project by visiting the following link:
 [DEMO](https://apple-ipad-app-theta.vercel.app/)
+
 ![Apple](https://raw.githubusercontent.com/dohae-kim22/apple-ipad-app/master/images/screenshot.png)
 
 ## Features

@@ -194,11 +194,21 @@ navigations.forEach((nav) => {
   });
 
   navigationEl.innerHTML = /*HTML*/ `
-    <h3>${nav.title}</h3>
+    <h3>
+      <span class="title">${nav.title}</span>
+      <span class="icon">+</span>
+    </h3>
     <ul>${navList}</ul>
   `;
 
   navigationsEl.appendChild(navigationEl);
+});
+
+const navigationEls = navigationsEl.querySelectorAll(".nav");
+navigationEls.forEach((el) => {
+  el.addEventListener("click", () => {
+    el.classList.toggle("active");
+  });
 });
 
 // Get Current Year

@@ -22,7 +22,6 @@ html.fixed {
 }
 
 body {
-  height: 10000px;
   font-family: "Roboto", "Noto Sans KR", sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -2825,6 +2824,10 @@ footer .navigations .nav:nth-child(6) {
   padding-bottom: 50px;
 }
 
+footer .navigations .nav .icon {
+  display: none;
+}
+
 footer .navigations h3 {
   font-size: 12px;
   font-weight: 600;
@@ -2890,6 +2893,98 @@ footer .legal li::after {
 
 footer .legal li:last-child::after {
   display: none;
+}
+
+@media (max-width: 1000px) {
+  footer .inner {
+    max-width: none;
+  }
+
+  footer .legal {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 30px;
+  }
+
+  footer .legal .locale {
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 740px) {
+  footer .buy-info {
+    flex-wrap: wrap;
+  }
+
+  footer .navigations {
+    height: auto;
+    display: block;
+  }
+
+  footer .navigations .nav {
+    margin-top: 0;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  footer .navigations .nav:nth-child(6) {
+    padding-bottom: 0;
+  }
+
+  footer .navigations .nav h3 {
+    display: flex;
+    padding: 12px 0;
+    font-weight: 400;
+  }
+
+  footer .navigations .nav:hover h3 {
+    font-weight: 600;
+  }
+
+  footer .navigations .nav .title {
+    flex-grow: 1;
+  }
+
+  footer .navigations .nav .icon {
+    display: block;
+    padding: 0 10px;
+    color: var(--color-font-darkgray);
+  }
+
+  footer .navigations .nav ul {
+    height: 0;
+    overflow: hidden;
+    transition: transform 0.6s, opacity 0.4s;
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+
+  footer .navigations .nav.active ul {
+    height: auto;
+    overflow: visible;
+    padding: 6px 0 18px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  footer .navigations .nav.active .icon {
+    transform: scale(1.2) rotate(45deg);
+  }
+
+  footer .navigations .nav li {
+    margin-top: 0;
+  }
+
+  footer .navigations .nav li a {
+    display: block;
+    padding: 6px 12px;
+  }
+
+  footer .legal ul {
+    flex-wrap: wrap;
+    gap: 6px 21px;
+  }
 }
 
 /* Sprite Icon */

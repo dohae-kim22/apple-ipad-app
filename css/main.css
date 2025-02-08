@@ -2600,6 +2600,12 @@ main {
   }
 }
 
+@media (max-width: 740px) {
+  .accessory-shop img {
+    width: 750px;
+  }
+}
+
 /* Trade */
 .trade {
   background-color: var(--color-section);

@@ -1,18 +1,41 @@
 # Apple Korea iPad Product Page Clone
 
-This project is a clone of Apple's iPad product page, created using only `HTML`, `CSS` and `JS`.
-The page is designed to be fully responsive, adjusting to different screen sizes, including mobile, tablet, and laptop screens.
+A fully responsive clone of Apple's iPad product page
+built using only  `HTML`, `CSS` and `JS` — no frameworks or libraries.
 
-## Demo
-
-You can view the live demo of the project by visiting the following link:
-[DEMO](https://apple-ipad-app-theta.vercel.app/)
+👉 [LIVE DEMO](https://apple-ipad-app-theta.vercel.app/)
 
 ![Apple](https://raw.githubusercontent.com/dohae-kim22/apple-ipad-app/master/images/screenshot.png)
 
-## Features
 
-- **Responsive Layout**: The page adapts seamlessly across various screen sizes (mobile, tablet, laptop).
-- **HTML, CSS, and JavaScript**: No external libraries or frameworks were used.
-- **Smooth Animations**: Product descriptions and other elements animate into view as the user scrolls down the page.
-- **Clean and Modern Design**: Aiming to replicate the minimalist and sleek design of Apple's official iPad product page.
+---
+
+## 🚀 Features
+
+- ✅ Fully responsive design (mobile, tablet, desktop)
+- ✅ Scroll-triggered animations and transitions
+- ✅ Sticky sections and dynamic layout effects
+- ✅ Semantic HTML structure
+- ✅ Clean CSS architecture with reusable classes
+
+---
+
+## 📱 Responsive Design
+
+This project supports:
+
+| Device       | Screen Width        | Optimized Layout |
+|--------------|---------------------|------------------|
+| 📱 Mobile     | up to 767px         | ✅ Yes            |
+| 💻 Tablet     | 768px – 1023px      | ✅ Yes            |
+| 🖥 Desktop    | 1024px and above    | ✅ Yes            |
+
+Resize your browser or open the demo on multiple devices to see the responsiveness in action.
+
+---
+
+## 🛠 Tech Stack
+
+- HTML5
+- CSS (media queries, transforms, transitions)
+- Vanilla JavaScript (scroll event listeners, DOM manipulation)

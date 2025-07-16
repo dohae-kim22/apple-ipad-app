@@ -26,9 +26,9 @@ This project supports:
 
 | Device       | Screen Width        | Optimized Layout |
 |--------------|---------------------|------------------|
-| 📱 Mobile     | up to 767px         | ✅ Yes            |
-| 💻 Tablet     | 768px – 1023px      | ✅ Yes            |
-| 🖥 Desktop    | 1024px and above    | ✅ Yes            |
+| 📱 Mobile     | up to 740px         | ✅ Yes            |
+| 💻 Tablet     | 740px – 999px      | ✅ Yes            |
+| 🖥 Desktop    | 1000px and above    | ✅ Yes            |
 
 Resize your browser or open the demo on multiple devices to see the responsiveness in action.
 
